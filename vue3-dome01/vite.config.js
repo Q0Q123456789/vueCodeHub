@@ -62,7 +62,14 @@ export default defineConfig(({ mode }) => ({
   // 开发服务器和构建优化（可按需调整）
   server: {
     host: '0.0.0.0',
-    open: true
+    open: true,
+    proxy: {
+      '/api': {
+        target: 'http://192.168.2.200:18080',
+        changeOrigin: true
+        // rewrite: (path) => path.replace(/^\/api/, '')
+      }
+    }
   },
   env: {
     browser: true,

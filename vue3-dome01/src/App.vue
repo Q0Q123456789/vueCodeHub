@@ -3,9 +3,10 @@ import layout from '@/components/layout/index.vue'
 </script>
 
 <template>
-  <layout>
+  <!-- <layout>
     <RouterView />
-  </layout>
+  </layout> -->
+  <RouterView />
 </template>
 
 <style scoped></style>
