@@ -10,12 +10,17 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@antdv-next/icons": "^1.1.2",
-    "@antdv-next/nuxt": "1.1.0",
-    "@types/node": "^26.6.6",
-    "antdv-next": "^1.7.1",
+    "@element-plus/icons-vue": "^2.3.2",
+    "dayjs": "^1.11.23",
+    "element-plus": "^2.14.7",
     "nuxt": "^4.6.4",
     "vue": "^3.5.44",
     "vue-router": "^5.4.0"
+  },
+  "devDependencies": {
+    "@antdv-next/icons": "^1.1.2",
+    "@antdv-next/nuxt": "1.1.0",
+    "@element-plus/nuxt": "^1.1.5",
+    "@types/node": "^26.6.6"
   }
 }

@@ -6,7 +6,7 @@ export default defineEventHandler(async (event) => {
 	if (!files || files.length === 0) {
 		return {
 			message: 'No files uploaded',
-			status: true
+			error: true
 		}
 	}
 
@@ -25,6 +25,6 @@ export default defineEventHandler(async (event) => {
 
 	return {
 		message: 'File uploaded successfully',
-		status: true
+		success: true
 	}
 })
